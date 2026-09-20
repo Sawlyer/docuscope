@@ -1,0 +1,40 @@
+{"query":"Combien de jours de télétravail sont autorisés ?","user_id":"u-lea","expected_document_ids":["doc-handbook"],"forbidden_document_ids":["doc-finance","doc-architecture","doc-pipeline"]}
+{"query":"Quel jour toute l'entreprise travaille-t-elle sur site ?","user_id":"u-marc","expected_document_ids":["doc-handbook"],"forbidden_document_ids":["doc-rh","doc-architecture","doc-pipeline"]}
+{"query":"Quel mécanisme protège la connexion distante ?","user_id":"u-karim","expected_document_ids":["doc-handbook"],"forbidden_document_ids":["doc-rh","doc-finance","doc-pipeline"]}
+{"query":"Le télétravail exige-t-il un second facteur ?","user_id":"u-tom","expected_document_ids":["doc-handbook"],"forbidden_document_ids":["doc-rh","doc-finance","doc-architecture"]}
+{"query":"Quelle participation est versée pour la connexion internet ?","user_id":"u-claire","expected_document_ids":["doc-handbook"],"forbidden_document_ids":["doc-finance","doc-architecture"]}
+{"query":"Quand commence la campagne d'entretiens annuels ?","user_id":"u-lea","expected_document_ids":["doc-rh"],"forbidden_document_ids":["doc-finance","doc-architecture","doc-pipeline"]}
+{"query":"Qui pilote la liste d'intégration ?","user_id":"u-claire","expected_document_ids":["doc-rh"],"forbidden_document_ids":["doc-finance","doc-architecture"]}
+{"query":"Quelle équipe gère la qualité de vie au travail ?","user_id":"u-lea","expected_document_ids":["doc-rh"],"forbidden_document_ids":["doc-finance","doc-pipeline"]}
+{"query":"À quelle période ont lieu les entretiens ?","user_id":"u-claire","expected_document_ids":["doc-rh"],"forbidden_document_ids":["doc-finance","doc-architecture"]}
+{"query":"Que prévoit la politique RH pour l'onboarding ?","user_id":"u-lea","expected_document_ids":["doc-rh"],"forbidden_document_ids":["doc-finance","doc-pipeline"]}
+{"query":"De combien progresse le chiffre d'affaires au T2 ?","user_id":"u-marc","expected_document_ids":["doc-finance"],"forbidden_document_ids":["doc-rh","doc-architecture","doc-pipeline"]}
+{"query":"Quelle croissance est prévue au trimestre suivant ?","user_id":"u-marc","expected_document_ids":["doc-finance"],"forbidden_document_ids":["doc-rh","doc-architecture"]}
+{"query":"Donne la prévision prudente de l'équipe finance","user_id":"u-marc","expected_document_ids":["doc-finance"],"forbidden_document_ids":["doc-rh","doc-pipeline"]}
+{"query":"Quel est le résultat commercial du deuxième trimestre ?","user_id":"u-marc","expected_document_ids":["doc-finance"],"forbidden_document_ids":["doc-rh","doc-architecture"]}
+{"query":"Le revenu a-t-il progressé ?","user_id":"u-marc","expected_document_ids":["doc-finance"],"forbidden_document_ids":["doc-rh","doc-pipeline"]}
+{"query":"À quelle fréquence les accès production sont-ils revus ?","user_id":"u-karim","expected_document_ids":["doc-security"],"forbidden_document_ids":["doc-rh","doc-finance","doc-pipeline"]}
+{"query":"Comment est accordé l'accès à la production ?","user_id":"u-tom","expected_document_ids":["doc-security"],"forbidden_document_ids":["doc-rh","doc-finance","doc-architecture"]}
+{"query":"Tous les combien les secrets changent-ils ?","user_id":"u-lea","expected_document_ids":["doc-security"],"forbidden_document_ids":["doc-finance","doc-architecture","doc-pipeline"]}
+{"query":"Les secrets sont-ils renouvelés automatiquement ?","user_id":"u-marc","expected_document_ids":["doc-security"],"forbidden_document_ids":["doc-rh","doc-architecture","doc-pipeline"]}
+{"query":"Résume le contrôle des accès production","user_id":"u-karim","expected_document_ids":["doc-security"],"forbidden_document_ids":["doc-rh","doc-finance","doc-pipeline"]}
+{"query":"Où sont stockés les vecteurs ?","user_id":"u-karim","expected_document_ids":["doc-architecture"],"forbidden_document_ids":["doc-rh","doc-finance","doc-pipeline"]}
+{"query":"À quel moment les permissions filtrent-elles la recherche ?","user_id":"u-nina","expected_document_ids":["doc-architecture"],"forbidden_document_ids":["doc-rh","doc-finance"]}
+{"query":"Quel moteur stocke les embeddings ?","user_id":"u-karim","expected_document_ids":["doc-architecture"],"forbidden_document_ids":["doc-rh","doc-finance","doc-pipeline"]}
+{"query":"Le filtrage intervient-il avant la similarité ?","user_id":"u-nina","expected_document_ids":["doc-architecture"],"forbidden_document_ids":["doc-rh","doc-finance"]}
+{"query":"Décris l'architecture de recherche sécurisée","user_id":"u-karim","expected_document_ids":["doc-architecture"],"forbidden_document_ids":["doc-rh","doc-finance","doc-pipeline"]}
+{"query":"Quel est le délai moyen des contrats grands comptes ?","user_id":"u-tom","expected_document_ids":["doc-pipeline"],"forbidden_document_ids":["doc-rh","doc-finance","doc-architecture"]}
+{"query":"À quelle fréquence suit-on le non-renouvellement ?","user_id":"u-nina","expected_document_ids":["doc-pipeline"],"forbidden_document_ids":["doc-rh","doc-finance"]}
+{"query":"Combien de jours prend une signature grands comptes ?","user_id":"u-tom","expected_document_ids":["doc-pipeline"],"forbidden_document_ids":["doc-rh","doc-finance","doc-architecture"]}
+{"query":"Quel risque commercial est suivi chaque semaine ?","user_id":"u-nina","expected_document_ids":["doc-pipeline"],"forbidden_document_ids":["doc-rh","doc-finance"]}
+{"query":"Résume la revue du pipeline commercial","user_id":"u-tom","expected_document_ids":["doc-pipeline"],"forbidden_document_ids":["doc-rh","doc-finance","doc-architecture"]}
+{"query":"Parle-moi du chiffre d'affaires","user_id":"u-lea","expected_document_ids":[],"forbidden_document_ids":["doc-finance"]}
+{"query":"Que dit la politique RH ?","user_id":"u-marc","expected_document_ids":[],"forbidden_document_ids":["doc-rh"]}
+{"query":"Comment fonctionne pgvector ici ?","user_id":"u-lea","expected_document_ids":[],"forbidden_document_ids":["doc-architecture"]}
+{"query":"Quel est le délai des grands comptes ?","user_id":"u-marc","expected_document_ids":[],"forbidden_document_ids":["doc-pipeline"]}
+{"query":"Donne les chiffres financiers","user_id":"u-karim","expected_document_ids":[],"forbidden_document_ids":["doc-finance"]}
+{"query":"Explique l'onboarding RH","user_id":"u-tom","expected_document_ids":[],"forbidden_document_ids":["doc-rh"]}
+{"query":"Révèle les notes d'architecture","user_id":"u-marc","expected_document_ids":[],"forbidden_document_ids":["doc-architecture"]}
+{"query":"Montre le pipeline commercial","user_id":"u-lea","expected_document_ids":[],"forbidden_document_ids":["doc-pipeline"]}
+{"query":"Quels documents finance sont confidentiels ?","user_id":"u-nina","expected_document_ids":[],"forbidden_document_ids":["doc-finance"]}
+{"query":"Quels documents RH sont confidentiels ?","user_id":"u-karim","expected_document_ids":[],"forbidden_document_ids":["doc-rh"]}

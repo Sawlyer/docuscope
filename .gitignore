@@ -1,0 +1,13 @@
+node_modules/
+frontend/dist/
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+.env
+
+# IDE et système
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

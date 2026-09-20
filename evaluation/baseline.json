@@ -1,0 +1,8 @@
+{
+  "cases": 40,
+  "recall_at_k": 1.0,
+  "mrr": 0.725,
+  "acl_leakage_count": 0,
+  "retrieval_threshold": 0.7,
+  "embedding_model": "intfloat/multilingual-e5-small"
+}
