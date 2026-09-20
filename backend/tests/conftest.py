@@ -7,17 +7,19 @@ from sqlalchemy import text
 
 
 TEST_DATABASE_URL = "postgresql+psycopg://docuscope:docuscope@postgres:5432/docuscope_test"
+CONFIGURED_DATABASE_URL = os.environ.get("DATABASE_URL", TEST_DATABASE_URL)
 
 
 def _ensure_test_database() -> None:
-    with psycopg.connect("postgresql://docuscope:docuscope@postgres:5432/postgres", autocommit=True) as connection:
+    admin_url = CONFIGURED_DATABASE_URL.replace("/docuscope_test", "/postgres")
+    with psycopg.connect(admin_url, autocommit=True) as connection:
         exists = connection.execute("SELECT 1 FROM pg_database WHERE datname = 'docuscope_test'").fetchone()
         if not exists:
             connection.execute("CREATE DATABASE docuscope_test")
 
 
 _ensure_test_database()
-os.environ["DATABASE_URL"] = TEST_DATABASE_URL
+os.environ["DATABASE_URL"] = CONFIGURED_DATABASE_URL
 
 from alembic import command
 from alembic.config import Config
