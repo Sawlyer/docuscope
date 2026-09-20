@@ -11,7 +11,7 @@ CONFIGURED_DATABASE_URL = os.environ.get("DATABASE_URL", TEST_DATABASE_URL)
 
 
 def _ensure_test_database() -> None:
-    admin_url = CONFIGURED_DATABASE_URL.replace("/docuscope_test", "/postgres")
+    admin_url = CONFIGURED_DATABASE_URL.replace("postgresql+psycopg://", "postgresql://").replace("/docuscope_test", "/postgres")
     with psycopg.connect(admin_url, autocommit=True) as connection:
         exists = connection.execute("SELECT 1 FROM pg_database WHERE datname = 'docuscope_test'").fetchone()
         if not exists:
